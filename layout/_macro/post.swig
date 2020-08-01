@@ -90,7 +90,8 @@
 
                 {%- set cat_length = post.categories.length %}
                 {%- if cat_length > 1 and loop.index !== cat_length %}
-                  {{ __('symbol.comma') }}
+                  <!-- {{ __('symbol.comma') }}-->
+                  &gt;
                 {%- endif %}
               {%- endfor %}
             </span>
